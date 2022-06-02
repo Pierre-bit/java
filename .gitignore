@@ -1,0 +1,7 @@
+\.metadata
+*.class
+.project
+.classpath
+org.eclipse.jdt.core.prefs
+.settings
+\bin
