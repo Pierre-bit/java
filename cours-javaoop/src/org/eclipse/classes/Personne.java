@@ -3,13 +3,16 @@
  */
 package org.eclipse.classes;
 
+import org.eclipse.enums.Sport;
 import org.eclipse.interfaces.IMiseEnForme;
+import org.eclipse.interfaces.Test;
+
 
 /**
  * @author Pierre
  *
  */
-public class Personne implements IMiseEnForme {
+public class Personne implements IMiseEnForme,Test {
 	
 	
 	private int id;
@@ -17,6 +20,7 @@ public class Personne implements IMiseEnForme {
 	private String forname;
 	private static int nbPersonnes;
 	private Adresse adresse;
+	private Sport sport;
 	
 	
 	// constructeur vide
@@ -32,15 +36,21 @@ public class Personne implements IMiseEnForme {
 		nbPersonnes++;
 	}
 	
-	// constructeur avec 4 parametre
-	public Personne(String name, String forname, Adresse adresse) {
+	// constructeur avec 4 parametre (surcharge du constructeur)
+	public Personne(String name, String forname, Adresse adresse,Sport sport) {
 		this.id = ++nbPersonnes;
 		this.name = name;
 		this.forname = forname;
 		this.adresse = adresse;
-		nbPersonnes++;
+		this.sport= sport;
 	}
 
+	public Sport getSport() {
+		return sport;
+	}
+	public void setSport(Sport sport) {
+		this.sport = sport;
+	}
 	public int getId() {
 		return id;
 	}
@@ -84,7 +94,7 @@ public class Personne implements IMiseEnForme {
 	
 	@Override
 	public String toString() {
-		return "Je m'appel "+name+" "+forname+" "+adresse+" et mon id est "+id;
+		return "Je m'appel "+name+" "+forname+" "+adresse+" et mon id est "+id+" et mon sport est "+sport;
 	}
 	
 	@Override
@@ -97,6 +107,13 @@ public class Personne implements IMiseEnForme {
 		System.out.println(forname.toLowerCase());
 		
 	}
+	@Override
+	public void afficherBonjour() {
+		System.out.println("bonjour");
+		
+	}
+	
+	
 
 //	@Override
 //	public String toString() {

@@ -1,5 +1,7 @@
 package org.eclipse.classes;
 
+import org.eclipse.enums.Sport;
+
 public class Etudiant extends Personne {
 
 	private String niveau;
@@ -9,8 +11,8 @@ public class Etudiant extends Personne {
 		
 	}
 	// constructeur avec rappel du constructeur de la classe Personne 
-	public Etudiant(String name, String forname, Adresse adresse,String niveau) {
-		super(name, forname, adresse);
+	public Etudiant(String name, String forname, Adresse adresse,String niveau, Sport sport) {
+		super(name, forname, adresse,sport);
 		this.niveau=niveau;
 		// TODO Auto-generated constructor stub
 	}

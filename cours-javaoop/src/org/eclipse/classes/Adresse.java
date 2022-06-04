@@ -1,5 +1,7 @@
 package org.eclipse.classes;
 
+import org.eclipse.exceptions.IncorrectCodePostalException;
+
 public class Adresse {
 
 	private String rue;
@@ -11,8 +13,11 @@ public class Adresse {
 		
 	}
 	
-	public Adresse(String rue, int codePostal, String ville) {
-		super();
+	public Adresse(String rue, int codePostal, String ville) throws IncorrectCodePostalException {
+		if (String.valueOf(codePostal).length() != 5)
+		{
+			throw new IncorrectCodePostalException();
+		}
 		this.rue = rue;
 		this.codePostal = codePostal;
 		this.ville = ville;
@@ -30,7 +35,11 @@ public class Adresse {
 		return codePostal;
 	}
 
-	public void setCodePostal(int codePostal) {
+	public void setCodePostal(int codePostal) throws IncorrectCodePostalException {
+		if (String.valueOf(codePostal).length() != 5)
+		{
+			throw new IncorrectCodePostalException();
+		}
 		this.codePostal = codePostal;
 	}
 
