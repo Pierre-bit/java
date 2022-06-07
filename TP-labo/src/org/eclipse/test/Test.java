@@ -2,10 +2,12 @@ package org.eclipse.test;
 
 import java.util.ArrayList;
 import java.util.List;
+//import java.util.*;
 import org.eclipse.classes.Adresse;
 import org.eclipse.classes.Bureau;
 import org.eclipse.classes.Chercheur;
 import org.eclipse.classes.Laboratoire;
+//import org.eclipse.classes.*;
 
 public class Test {
 
