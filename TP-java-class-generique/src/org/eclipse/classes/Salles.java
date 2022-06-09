@@ -6,12 +6,25 @@ public class Salles {
 	private String code;
 	private String libelle;
 	private static int count;
+	
+	
+	public Salles() {
+
+	}
+	
 	public Salles(String code, String libelle) {
 
 		this.id=++count;
 		this.code = code;
 		this.libelle = libelle;
 	}
+	
+	public Salles(int id, String code, String libelle) {
+		this.id = id;
+		this.code = code;
+		this.libelle = libelle;
+	}
+
 	public String getCode() {
 		return code;
 	}
