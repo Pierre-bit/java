@@ -15,11 +15,11 @@ public class SalleService implements IDao<Salles> {
 	
 	public SalleService() {
 		salles = new ArrayList<Salles>();
-		salles.add(new Salles(1,"1","master"));
-		salles.add(new Salles(2,"2","princier"));
-		salles.add(new Salles(3,"3","dortoir"));
-		salles.add(new Salles(4,"4","gardien"));
-		salles.add(new Salles(5,"5","prison"));
+//		salles.add(new Salles("1","master","oui"));
+//		salles.add(new Salles("2","princier","non"));
+//		salles.add(new Salles("3","dortoir","Dans 10 minutes"));
+//		salles.add(new Salles("4","gardien","Dans 10 minutes"));
+//		salles.add(new Salles("5","prison","non"));
 //		salles.add(new Salles(1, "A", "Salle 1"));
 //		salles.add(new Salles(2, "B", "Salle 2"));
 //		salles.add(new Salles(3, "C", "Salle 3"));

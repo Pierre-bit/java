@@ -6,6 +6,7 @@ public class Salles {
 	private String code;
 	private String libelle;
 	private static int count;
+	private String dispo;
 	
 	
 	public Salles() {
@@ -19,10 +20,28 @@ public class Salles {
 		this.libelle = libelle;
 	}
 	
-	public Salles(int id, String code, String libelle) {
+	public Salles(int id, String code, String libelle,String dispo) {
 		this.id = id;
 		this.code = code;
 		this.libelle = libelle;
+		this.dispo = dispo;
+	}
+	
+	public Salles(String code, String libelle,String dispo) {
+
+		this.id=++count;
+		this.code = code;
+		this.libelle = libelle;
+		this.dispo=dispo;
+	}
+
+	
+	public String getDispo() {
+		return dispo;
+	}
+
+	public void setDispo(String dispo) {
+		this.dispo = dispo;
 	}
 
 	public String getCode() {
