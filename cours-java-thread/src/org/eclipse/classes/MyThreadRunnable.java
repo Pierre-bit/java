@@ -5,7 +5,6 @@ public class MyThreadRunnable implements Runnable {
 	private String name;
 	
 	public MyThreadRunnable() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public MyThreadRunnable(String name) {
@@ -23,7 +22,6 @@ public class MyThreadRunnable implements Runnable {
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
 		for (int i = 0; i < 5; i++) {
 			System.out.print(this.getName() + " ");
 		}

@@ -7,7 +7,6 @@ public class Compteur extends Thread{
 	private static int ordre = 1;
 	
 	public Compteur() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Compteur(String name) {

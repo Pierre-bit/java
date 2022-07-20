@@ -11,7 +11,6 @@ import org.eclipse.classes.TestThread;
 public class Main {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 		MyThread A = new MyThread("A");
 		MyThread B = new MyThread("B");
 		MyThread C = new MyThread("C");

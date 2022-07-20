@@ -6,7 +6,6 @@ public class JobSylvieEtBruno implements Runnable {
 	private String name;
 	
 	public JobSylvieEtBruno() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public JobSylvieEtBruno(Compte compte, String name) {
@@ -30,7 +29,6 @@ public class JobSylvieEtBruno implements Runnable {
 					Thread.sleep(500);
 					
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				System.out.println(name+" se reveille" );

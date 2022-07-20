@@ -6,7 +6,6 @@ public class TestThread implements Runnable {
 	private String name;
 	
 	public TestThread() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public TestThread(MyCount tC, String name) {

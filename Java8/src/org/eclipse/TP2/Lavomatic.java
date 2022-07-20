@@ -3,7 +3,6 @@ package org.eclipse.TP2;
 public class Lavomatic {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		ImachineAlaver ime;
 		ime = (message) -> {

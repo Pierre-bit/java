@@ -11,7 +11,6 @@ public class JobSylvieetBrunoCorrection {
 		}
 	}
 	public JobSylvieetBrunoCorrection() {
-		// TODO Auto-generated constructor stub
 	}
 	public JobSylvieetBrunoCorrection(Compte compte, String name) {
 		super();
@@ -26,7 +25,6 @@ public class JobSylvieetBrunoCorrection {
 					System.out.println(this.name + " va dormir");
 					Thread.sleep(500);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				System.out.println(this.name + " se reveille");
