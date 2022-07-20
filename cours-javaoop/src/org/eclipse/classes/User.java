@@ -9,7 +9,6 @@ public abstract class User {
 	private static int count;
 
 	public User() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public User(String nom, String prenom) {

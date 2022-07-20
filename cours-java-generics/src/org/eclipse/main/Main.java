@@ -13,7 +13,6 @@ import org.eclipse.classes.Etudiant;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		List<Etudiant> etudiant = new ArrayList<Etudiant>(); 
 		etudiant.add(new Etudiant("Dupont", "0123"));
@@ -77,7 +76,17 @@ public class Main {
 //			System.out.println(etu.getKey()+ "");
 //		}
 		
-	
+		for (int i =0 ; i <199; i++){
+
+            if (i%3 ==0){ System.out.println("Fizz");}
+
+            else if (i%5 ==0){System.out.println("Buzz");}
+
+            else if(i%3  == 0 && i%5 ==0){System.out.println("FizzBuzz");}
+
+            else {System.out.println(i);}
+
+      }
 		
 	}
 	public static String SearchByNumero(String numero,List<Etudiant> liste )

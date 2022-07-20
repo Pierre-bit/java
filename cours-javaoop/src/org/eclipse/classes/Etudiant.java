@@ -14,7 +14,6 @@ public class Etudiant extends Personne {
 	public Etudiant(String name, String forname, Adresse adresse,String niveau, Sport sport) {
 		super(name, forname, adresse,sport);
 		this.niveau=niveau;
-		// TODO Auto-generated constructor stub
 	}
 	
 	public String getNiveau() {

@@ -13,7 +13,6 @@ public class Enseignant extends Personne {
 	public Enseignant(String name, String forname,double salaire) {
 		super(name, forname);
 		this.salaire = salaire;
-		// TODO Auto-generated constructor stub
 	}
 
 	public double getSalaire() {

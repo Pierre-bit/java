@@ -9,7 +9,6 @@ public class Main {
 
 	// methode principale de l'application
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 //		System.out.println("Hello world a tous apres compilation test");
 //		String hello ="hello";

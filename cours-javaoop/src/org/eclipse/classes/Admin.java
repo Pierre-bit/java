@@ -4,12 +4,10 @@ public class Admin extends User {
 
 	
 	public Admin() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Admin(String nom, String prenom) {
 		super(nom, prenom);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

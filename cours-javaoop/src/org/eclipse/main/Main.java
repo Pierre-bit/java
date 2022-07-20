@@ -13,7 +13,6 @@ import org.eclipse.classes.Methodes;
 public class Main {
 
 	public static void main(String[] args) throws IncorrectCodePostalException {
-		// TODO Auto-generated method stub
 		
 		Personne p1 = new Personne(1,"Wick","John");
 		Personne p2 = new Personne();
